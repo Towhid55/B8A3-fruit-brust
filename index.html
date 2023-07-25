@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit-Brust</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- tailwind & daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Lato Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/08a2955091.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'fruit-primary': '#F85559',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-lato">
+    <header class="md:container md:mx-auto">
+
+        <nav class="">
+            <div class="navbar bg-fruit-primary rounded-full">
+                
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-white text-base font-medium menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex mx-auto items-center space-x-4">
+                        <img src="./images/logo.png" alt="">
+                        <h2 class="text-white text-4xl font-bold">Fruit Burst</h2>
+                    </div>
+                </div>
+
+
+                <div class="">
+                    
+                    <button class="btn rounded-full px-7 py-2 hidden md:inline-flex lg:inline-flex"><input class="bg-transparent mb-2" type="search" placeholder="Search here"><i class="fa-solid fa-search text-2xl text-black"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
+
+
+
